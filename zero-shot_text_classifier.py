@@ -56,7 +56,7 @@ c1, c2 = st.columns([0.4, 2])
 with c1:
 
     st.image(
-        "https://charlywargnier-zero-shot-classifier-streamlit-app-isif2g.streamlit.app/~/+/media/86638f61f80cb40e8b6252ab07a62aaf16fe6a4a0a9d3620611f63b0.png",
+        "https://github.com/CharlyWargnier/zero-shot-classifier/blob/main/logo.png?raw=true",
         width=110,
     )
 
@@ -67,7 +67,7 @@ with c2:
 
 
 st.sidebar.image(
-    "https://charlywargnier-zero-shot-classifier-streamlit-app-isif2g.streamlit.app/~/+/media/c7648d78052b603c6127573d78c705152db9a462aa22269092128232.png",
+    "https://github.com/CharlyWargnier/zero-shot-classifier/blob/main/30days_logo.png?raw=true",
 )
 
 st.write("")
@@ -155,7 +155,7 @@ def main():
 
 if selected == "Demo (5 phrases max)":
 
-    API_KEY = st.secrets["API_KEY"]
+    API_KEY = st.secrets["API_TOKEN"]
 
     API_URL = (
         "https://api-inference.huggingface.co/models/valhalla/distilbart-mnli-12-3"
